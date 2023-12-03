@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+   <link rel="stylesheet" href="js1.css">
+</head>
+<body>
+        <div class="container">
+            <div class="inputclass" id="H"> Educational website</div>
+           
+           
+            <div class="inputclass">Name *:
+            <input type="text" placeholder="Enter your Name" id="name">
+            </div>
+            <div class="inputclass">Email *:
+            <input type="text" placeholder="Enter your Email address" id="email">
+            </div>
+            <div class="input">Password*:
+            <input type="password" placeholder="Enter your Password" id="password" pattern="(?=.*\d)(?=.*[a-z])(/=.*[A-Z]).{8,}">
+            </div>
+            <button id="butt" onclick="signIn()">Sign Up</button>
+            <div id="demo"></div>
+        </div>
+        <script src="js1.js"></script>
+</body>
+</html>
